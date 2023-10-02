@@ -7,30 +7,23 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
-
-@Table(name = "Topicos")
-@Entity(name="Topico")
+@Table(name="Respuestas")
+@Entity(name = "Respuesta")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @EqualsAndHashCode(of = "id")
-public class Topico {
+public class Respuesta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String titulo;
     private String mensaje;
-    private LocalDateTime fechaCreacion;
-    @Enumerated
-    private StatusTopico tipoTopicos ;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="usuario_id")
+    @JoinColumn(name = "topico_id")
+    private Topico topico;
+    private LocalDateTime fechaCreacion = LocalDateTime.now();
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "usuario_id")
     private Usuario autor;
-    private String curso;
-    @OneToMany(mappedBy = "topico")
-    private List<Respuesta> respuestas;
-
-
+    private Boolean solucion = false;
 }
