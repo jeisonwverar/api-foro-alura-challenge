@@ -1,5 +1,7 @@
-package com.foro.alura.api.model;
+package com.foro.alura.api.model.respuesta;
 
+import com.foro.alura.api.model.Topico.Topico;
+import com.foro.alura.api.model.usuario.Usuario;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

@@ -1,4 +1,4 @@
-package com.foro.alura.api.model;
+package com.foro.alura.api.model.Topico;
 
 public enum StatusTopico {
     NO_RESPONDIDO,

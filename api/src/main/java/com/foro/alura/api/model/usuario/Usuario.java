@@ -1,4 +1,4 @@
-package com.foro.alura.api.model;
+package com.foro.alura.api.model.usuario;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

@@ -1,6 +1,6 @@
 package com.foro.alura.api.controller;
 
-import com.foro.alura.api.model.Topico;
+import com.foro.alura.api.model.Topico.Topico;
 import com.foro.alura.api.repository.TopicoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

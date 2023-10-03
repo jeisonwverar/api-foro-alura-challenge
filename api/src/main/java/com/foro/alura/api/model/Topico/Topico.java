@@ -1,5 +1,7 @@
-package com.foro.alura.api.model;
+package com.foro.alura.api.model.Topico;
 
+import com.foro.alura.api.model.respuesta.Respuesta;
+import com.foro.alura.api.model.usuario.Usuario;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -7,7 +9,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 @Table(name = "Topicos")
